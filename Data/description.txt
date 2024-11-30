@@ -1,0 +1,13 @@
+The data/ folder contains all the essential datasets used in the project. These datasets are the building blocks for training and evaluating the stock price prediction models. Here's a breakdown of the files:
+
+stock_data_raw.csv: Contains the raw data scraped from Reddit discussions. It includes the post title, text, subreddit information, sentiment score, and other related details for various stocks.
+
+stock_cleaned.csv: A cleaned version of the raw data where unnecessary information has been removed, and the text data has been preprocessed (e.g., special characters, stopwords, and duplicates removed).
+
+stock_preprocessed.csv: Further cleaned and tokenized Reddit posts with sentiment labels (Positive, Neutral, Negative) ready for sentiment analysis.
+
+all_companies_classification_data.csv: Contains the historical stock price data for companies like Tesla, Apple, and Amazon. The data is annotated with target labels based on price changes: Increase (+1), Decrease (-1), or No Change (0).
+
+merged_stock_sentiment_data.csv: The final dataset combining sentiment analysis results with stock price data, aligned by date and company. This dataset is used for model training and prediction.
+
+These files allow you to dive deep into the stock price prediction process, from collecting and cleaning data to building and testing predictive models.
