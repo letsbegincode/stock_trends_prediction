@@ -72,6 +72,14 @@ This project leverages public sentiment from Reddit discussions and historical s
 
 ---
 
+📂 **Data Access**  
+Since the datasets are large and exceed GitHub's file upload limits, you can download the datasets from the following link:  
+
+- [Download Datasets from Google Drive](https://drive.google.com/drive/folders/1clJ2-vsdypKNe32euxH6Rew2npiOpEGO?usp=sharing)
+
+
+---
+
 ## **📁 Results Section**  
 
 ### **results.txt**  
