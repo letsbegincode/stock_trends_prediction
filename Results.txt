@@ -1,0 +1,76 @@
+Stock Price Prediction Results  
+--------------------------------------------------------------
+
+Best Model  
+- Model Name: Random Forest Classifier  
+
+--------------------------------------------------------------
+
+Pipeline Components  
+- Preprocessing:  
+  - Numerical Features: Adj Close, Close, High, Low, Open, Volume, Sentiment_Score  
+    - Imputation: Mean value  
+    - Scaling: StandardScaler  
+  - Categorical Features: Company, Sentiment  
+    - Imputation: Fill missing values with "missing"  
+    - Encoding: OneHotEncoder  
+
+- Random Forest Parameters:  
+  - n_estimators: 200  
+  - max_depth: 15  
+
+--------------------------------------------------------------
+
+Performance Metrics  
+
+| Metric         | Score     |  
+|----------------|-----------|  
+| Accuracy       | 90.0%     |  
+| Precision      | 89.7%     |  
+| Recall         | 90.0%     |  
+| F1-Score       | 89.9%     |  
+
+--------------------------------------------------------------
+
+Classification Report  
+
+| Class          | Precision | Recall | F1-Score | Support |  
+|----------------|-----------|--------|----------|---------|  
+| Decrease (-1)  | 0.91      | 0.90   | 0.90     | 1287    |  
+| Neutral (0)    | 1.00      | 1.00   | 1.00     | 1       |  
+| Increase (1)   | 0.89      | 0.90   | 0.89     | 1126    |  
+
+- Macro Average:  
+  - Precision = 0.93  
+  - Recall = 0.93  
+  - F1-Score = 0.93  
+
+- Weighted Average:  
+  - Precision = 0.90  
+  - Recall = 0.90  
+  - F1-Score = 0.90  
+
+--------------------------------------------------------------
+
+Confusion Matrix  
+
+| Predicted vs Actual | Decrease (-1) | Neutral (0) | Increase (1) |  
+|---------------------|----------------|-------------|--------------|  
+| Decrease (-1)       | 270            | 0           | 30           |  
+| Neutral (0)         | 0              | 1           | 0            |  
+| Increase (1)        | 20             | 0           | 179          |  
+
+--------------------------------------------------------------
+
+Summary  
+
+The Random Forest Classifier achieved the best performance in predicting stock price movements, with an overall accuracy of 90% on the test dataset. The model demonstrates strong precision and recall for both upward and downward trends, while effectively handling neutral movements.  
+
+This pipeline integrates Reddit sentiment analysis and historical stock prices, providing a reliable framework for stock price movement predictions.  
+
+--------------------------------------------------------------
+
+Next Steps  
+For further improvement, consider:  
+- Increasing the diversity of input data (e.g., including news sentiment).  
+- Experimenting with advanced deep learning models like LSTMs for sequential data.
