@@ -20,7 +20,7 @@ This project leverages public sentiment from Reddit discussions and historical s
 ## **🔧 Repository Structure**
 
 ```  
-📂 stock_price_prediction/  
+📂 stock_trends_prediction/  
 ├── stock_price_prediction.ipynb   # The main Colab notebook  
 ├── data/                          # Directory for datasets  
 │   ├── stock_data_raw.csv         # Raw Reddit data  
