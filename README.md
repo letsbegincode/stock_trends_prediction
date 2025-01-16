@@ -30,7 +30,8 @@ This project leverages public sentiment from Reddit discussions and historical s
 │   └── merged_stock_sentiment_data.csv        # Final merged dataset  
 ├── results/                       # Directory for outputs  
 │   └── results.txt                # Final result matrix (model evaluation)  
-└── README.md                      # Project documentation  
+└── README.md                      # Project documentation
+└── Report.pdf                     # Overview of project  
 ```  
 
 ---
